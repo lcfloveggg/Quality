@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.content {
+    width: 85%;
+    height: 80%;
+    min-height: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px #ebe6e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: auto;
+}
+
+.data_head {
+    width: 80%;
+    height: 10%;
+    padding: 20px 30px;
+    font-size: 18px;
+    color: orangered;
+}
+.content .box{
+    width: 50%;
+    height: 300px;
+    float: left;
+    padding:0 30px;
+}
+#main{
+    width: 100%;
+    height:300px;
+}
+#Overview{
+    width: 100%;
+    height:300px;
+}
+#Rule{
+    width: 100%;
+    height:400px;
+}
+#Task{
+    width: 100%;
+    height:400px;
+}

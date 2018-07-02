@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户管理</title>
+    <!--有网络-->
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <!--无网络-->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/three.css">
+
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/layer/layer/layer.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+
+<div class="content">
+    <div class="data_head">
+        <h1>数据资源信息</h1>
+    </div>
+    <div class="data_title">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="Directory" class="col-xs-2 control-label">目录名称：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="Directory">
+                </div>
+                <label for="Resources" class="col-xs-2 control-label">资源编码：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="Resources">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Type" class="col-xs-2 control-label">资源类型：</label>
+                <div class="col-xs-4">
+                    <select class="form-control" id="Type">
+                        <option>公共数据资源</option>
+                        <option>公共数据资源2</option>
+                    </select>
+                </div>
+                <label for="Details" class="col-xs-2 control-label">详情：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="Details">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-xs-2 control-label">资源地址：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="address">
+                </div>
+                <label for="Tel" class="col-xs-2 control-label">联系电话：</label>
+                <div class="col-xs-4">
+                    <input type="tel" class="form-control" id="Tel">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="postcode" class="col-xs-2 control-label">邮编：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="postcode">
+                </div>
+                <label for="Fax" class="col-xs-2 control-label">传真：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="Fax">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Provinces" class="col-xs-2 control-label">所属省份：</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="Provinces">
+                </div>
+                <label for="Show" class="col-xs-2 control-label">是否显示：</label>
+                <div class="col-xs-4">
+                    <select class="form-control" id="Show">
+                        <option>是</option>
+                        <option>否</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="data_bottom">
+        <div class="container-fluid">
+            <ul class="pagination">
+                <li class="button">
+                    <div id="add_data" class="btn btn-success">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="change_user" class="btn btn-info">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 修改
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="Import_user" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-in"></span> 导入
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="Export_data" class="btn btn-info">
+                        <span class="glyphicon glyphicon-log-out"></span> 导出
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="Release_user" class="btn btn-info">
+                        <span class="glyphicon glyphicon-folder-open"></span> 服务发布
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="Refresh_data" class="btn btn-info">
+                        <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> 刷新
+                    </div>
+                </li>
+                <li class="button">
+                    <div id="del_data" class="btn btn-danger">
+                        <span class="glyphicon glyphicon-trash"></span> 删除
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--layer  添加-->
+<div class="layer">
+    <div class="list_layer" id="list_layer" style="display: none;">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="add_name"
+                       class="col-xs-2 col-md-2 col-xs-offset-2 col-md-offset-2 control-label">用户名</label>
+                <div class="col-xs-6 col-md-6">
+                    <input type="text" class="form-control" id="add_name">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--layer end-->
+</body>
+</html>

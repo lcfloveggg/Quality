@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="renderer" content="webkit">
+    <title>数据质量管理系统</title>
+    <link rel="stylesheet" href="css/pintuer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="header bg-main">
+    <div class="logo margin-big-left fadein-top">
+        <h1>数据质量管理系统</h1>
+    </div>
+</div>
+<div class="leftnav">
+    <div class="leftnav-title">
+        <strong><span class="icon-list"></span>菜单列表</strong>
+    </div>
+    <h2><span class="icon-pencil-square-o"></span>首页</h2>
+    <ul>
+        <li>
+            <a href="html/one.html" target="right"><span class="icon-caret-right"></span>首页</a>
+        </li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>数据源管理</h2>
+    <ul>
+        <li>
+            <a href="html/two.html" target="right"><span class="icon-caret-right"></span>数据源管理</a>
+        </li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>规则管理</h2>
+    <ul>
+        <li>
+            <a href="html/four.html" target="right"><span class="icon-caret-right"></span>规则管理</a>
+        </li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>数据质量监控</h2>
+    <ul>
+        <li>
+            <a href="html/two.html" target="right"><span class="icon-caret-right"></span>数据质量监控</a>
+        </li>
+    </ul>
+    <h2><span class="icon-pencil-square-o"></span>数据质量报告</h2>
+    <ul>
+        <li>
+            <a href="html/two.html" target="right"><span class="icon-caret-right"></span>数据质量报告</a>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".leftnav h2").click(function () {
+            $(this).next().slideToggle(200);
+            $(this).toggleClass("on");
+        });
+        $(".leftnav ul li a").click(function () {
+            $("#a_leader_txt").text($(this).text());
+            $(".leftnav ul li a").removeClass("on");
+            $(this).addClass("on");
+            $(".leftnav2").css("display", "block");
+        })
+    });
+</script>
+<ul class="bread">
+    <li><a href="html/one.html" target="right" class="icon-home"> 首页</a></li>
+    <li><span id="a_leader_txt">用户信息</span></li>
+</ul>
+<div class="admin">
+    <iframe scrolling="auto" rameborder="0" src="" name="right" width="100%" height="100%"></iframe>
+</div>
+</body>
+</html>
