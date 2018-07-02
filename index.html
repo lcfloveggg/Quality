@@ -62,6 +62,9 @@
             $(".leftnav ul li a").removeClass("on");
             $(this).addClass("on");
             $(".leftnav2").css("display", "block");
+        });
+        $(".bread li a").click(function () {
+            $("#a_leader_txt").text($(this).text());
         })
     });
 </script>
